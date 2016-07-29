@@ -9,5 +9,6 @@ pod "SVProgressHUD"
 pod "FDFullscreenPopGesture", "~> 1.1"
 pod "Alamofire"
 pod "SwiftyJSON"
+pod "MJRefresh"
 
 end
