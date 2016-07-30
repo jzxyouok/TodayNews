@@ -14,7 +14,6 @@ class YMNavigationController: UINavigationController {
         super.initialize()
         let navBar = UINavigationBar.appearance()
         navBar.barTintColor = UIColor.whiteColor()
-        
     }
 
     override func didReceiveMemoryWarning() {

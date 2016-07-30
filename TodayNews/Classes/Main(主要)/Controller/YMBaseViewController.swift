@@ -12,7 +12,7 @@ class YMBaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = YMGlobalColor()
         
     }
 
