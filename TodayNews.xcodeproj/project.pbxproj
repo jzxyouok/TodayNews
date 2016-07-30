@@ -30,6 +30,12 @@
 		947565031D4C2EE800AC6B72 /* YMMineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 947565011D4C2EE800AC6B72 /* YMMineCell.xib */; };
 		947565051D4C3AA600AC6B72 /* YMMineCellPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 947565041D4C3AA600AC6B72 /* YMMineCellPlist.plist */; };
 		947565071D4C3BD100AC6B72 /* YMMineCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947565061D4C3BD100AC6B72 /* YMMineCellModel.swift */; };
+		947565091D4C568100AC6B72 /* YMCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947565081D4C568100AC6B72 /* YMCollectionViewController.swift */; };
+		9475650B1D4C584C00AC6B72 /* YMSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9475650A1D4C584C00AC6B72 /* YMSettingViewController.swift */; };
+		9475650D1D4C5AA500AC6B72 /* YMSettingPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9475650C1D4C5AA500AC6B72 /* YMSettingPlist.plist */; };
+		9475650F1D4CAC8E00AC6B72 /* YMSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9475650E1D4CAC8E00AC6B72 /* YMSettingModel.swift */; };
+		947565121D4CAD8400AC6B72 /* YMSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947565101D4CAD8400AC6B72 /* YMSettingCell.swift */; };
+		947565131D4CAD8400AC6B72 /* YMSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 947565111D4CAD8400AC6B72 /* YMSettingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +86,12 @@
 		947565011D4C2EE800AC6B72 /* YMMineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMMineCell.xib; sourceTree = "<group>"; };
 		947565041D4C3AA600AC6B72 /* YMMineCellPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YMMineCellPlist.plist; sourceTree = "<group>"; };
 		947565061D4C3BD100AC6B72 /* YMMineCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMMineCellModel.swift; sourceTree = "<group>"; };
+		947565081D4C568100AC6B72 /* YMCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMCollectionViewController.swift; sourceTree = "<group>"; };
+		9475650A1D4C584C00AC6B72 /* YMSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMSettingViewController.swift; sourceTree = "<group>"; };
+		9475650C1D4C5AA500AC6B72 /* YMSettingPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YMSettingPlist.plist; sourceTree = "<group>"; };
+		9475650E1D4CAC8E00AC6B72 /* YMSettingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMSettingModel.swift; sourceTree = "<group>"; };
+		947565101D4CAD8400AC6B72 /* YMSettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMSettingCell.swift; sourceTree = "<group>"; };
+		947565111D4CAD8400AC6B72 /* YMSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMSettingCell.xib; sourceTree = "<group>"; };
 		FC9B11AC2D7AFCE523D16496 /* Pods-TodayNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodayNews/Pods-TodayNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -255,6 +267,7 @@
 				9475647B1D4B86FE00AC6B72 /* Info.plist */,
 				947564781D4B86FE00AC6B72 /* LaunchScreen.storyboard */,
 				947565041D4C3AA600AC6B72 /* YMMineCellPlist.plist */,
+				9475650C1D4C5AA500AC6B72 /* YMSettingPlist.plist */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -281,6 +294,8 @@
 			isa = PBXGroup;
 			children = (
 				947564DD1D4BADD500AC6B72 /* YMMineViewController.swift */,
+				947565081D4C568100AC6B72 /* YMCollectionViewController.swift */,
+				9475650A1D4C584C00AC6B72 /* YMSettingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -289,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				947565061D4C3BD100AC6B72 /* YMMineCellModel.swift */,
+				9475650E1D4CAC8E00AC6B72 /* YMSettingModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -302,6 +318,8 @@
 				947564FE1D4C2BD600AC6B72 /* YMMineHeaderIconButton.swift */,
 				947565001D4C2EE800AC6B72 /* YMMineCell.swift */,
 				947565011D4C2EE800AC6B72 /* YMMineCell.xib */,
+				947565101D4CAD8400AC6B72 /* YMSettingCell.swift */,
+				947565111D4CAD8400AC6B72 /* YMSettingCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -480,7 +498,9 @@
 			files = (
 				947565031D4C2EE800AC6B72 /* YMMineCell.xib in Resources */,
 				9475647A1D4B86FE00AC6B72 /* LaunchScreen.storyboard in Resources */,
+				947565131D4CAD8400AC6B72 /* YMSettingCell.xib in Resources */,
 				947565051D4C3AA600AC6B72 /* YMMineCellPlist.plist in Resources */,
+				9475650D1D4C5AA500AC6B72 /* YMSettingPlist.plist in Resources */,
 				947564771D4B86FE00AC6B72 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,13 +576,17 @@
 			files = (
 				947565071D4C3BD100AC6B72 /* YMMineCellModel.swift in Sources */,
 				947564FB1D4C299C00AC6B72 /* YMMineHeaderView.swift in Sources */,
+				947565121D4CAD8400AC6B72 /* YMSettingCell.swift in Sources */,
 				947564F91D4C274C00AC6B72 /* UIView+Extension.swift in Sources */,
 				947564F01D4BADD500AC6B72 /* YMNewCareViewController.swift in Sources */,
 				947564EA1D4BADD500AC6B72 /* YMHomeViewController.swift in Sources */,
 				947564F11D4BADD500AC6B72 /* YMVideoViewController.swift in Sources */,
 				947564FD1D4C2AA500AC6B72 /* YMMineHeaderBottomView.swift in Sources */,
+				9475650F1D4CAC8E00AC6B72 /* YMSettingModel.swift in Sources */,
 				947564ED1D4BADD500AC6B72 /* YMTabBarController.swift in Sources */,
 				947565021D4C2EE800AC6B72 /* YMMineCell.swift in Sources */,
+				9475650B1D4C584C00AC6B72 /* YMSettingViewController.swift in Sources */,
+				947565091D4C568100AC6B72 /* YMCollectionViewController.swift in Sources */,
 				947564EC1D4BADD500AC6B72 /* YMNavigationController.swift in Sources */,
 				947564EF1D4BADD500AC6B72 /* YMMineViewController.swift in Sources */,
 				947564EE1D4BADD500AC6B72 /* AppDelegate.swift in Sources */,

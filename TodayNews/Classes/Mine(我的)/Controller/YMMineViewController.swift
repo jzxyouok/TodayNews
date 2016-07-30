@@ -53,6 +53,7 @@ class YMMineViewController: UITableViewController {
         tableView.tableFooterView = footerView
         tableView.rowHeight = kMineCellH
         tableView.separatorStyle = .None
+        
     }
     
     /// 懒加载，创建 headerView
@@ -82,7 +83,9 @@ extension YMMineViewController: YMMineHeaderViewDelegae, YMMineHeaderBottomViewD
     
     // MARK: - YMMineHeaderBottomViewDelegate
     func headerBottomView(bottomView: YMMineHeaderBottomView,  collectionButton: YMVerticalButton) {
-        print(#function)
+        let collectionVC = YMCollectionViewController()
+        collectionVC.title = "收藏"
+        navigationController?.pushViewController(collectionVC, animated: true)
     }
     
     func headerBottomView(bottomView: YMMineHeaderBottomView, nightButton: YMVerticalButton) {
@@ -90,7 +93,9 @@ extension YMMineViewController: YMMineHeaderViewDelegae, YMMineHeaderBottomViewD
     }
     
     func headerBottomView(bottomView: YMMineHeaderBottomView, settingButton: YMVerticalButton) {
-        print(#function)
+        let settingVC = YMSettingViewController()
+        settingVC.title = "设置"
+        navigationController?.pushViewController(settingVC, animated: true)
     }
     
     // MARK: - UITableViewDataSource
@@ -118,6 +123,7 @@ extension YMMineViewController: YMMineHeaderViewDelegae, YMMineHeaderBottomViewD
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
     }
+    
     // MARK: - UIScrollViewDelagate
     override func scrollViewDidScroll(scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y
@@ -126,6 +132,8 @@ extension YMMineViewController: YMMineHeaderViewDelegae, YMMineHeaderBottomViewD
             tempFrame.origin.y = offsetY
             tempFrame.size.height = kYMMineHeaderImageHeight - offsetY
             headerView.bgImageView.frame = tempFrame
+            headerView.blurView.frame = tempFrame
+            headerView.blurView.layoutIfNeeded()
         }
         
     }

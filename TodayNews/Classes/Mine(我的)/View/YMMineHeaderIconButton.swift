@@ -17,7 +17,7 @@ class YMMineHeaderIconButton: UIButton {
         titleLabel?.textAlignment = .Center
         titleLabel?.font = UIFont.systemFontOfSize(18)
         setTitleColor(UIColor.whiteColor(), forState: .Normal)
-        imageView?.layer.cornerRadius = 25
+        imageView?.layer.cornerRadius = 30
         imageView?.layer.masksToBounds = true
     }
     
@@ -30,7 +30,7 @@ class YMMineHeaderIconButton: UIButton {
         // 调整图片
         imageView?.x = kMargin
         imageView?.y = 0
-        imageView?.width = 50
+        imageView?.width = 60
         imageView?.height = imageView!.width
         // 调整文字
         titleLabel?.x = 0

@@ -35,6 +35,8 @@ class YMMineHeaderView: UIView {
     private func setupUI() {
         // 添加背景图片
         addSubview(bgImageView)
+        // 添加毛玻璃效果
+        bgImageView.addSubview(blurView)
         // 添加头像按钮
         addSubview(headPhotoButton)
         // 添加背景图片
@@ -47,9 +49,13 @@ class YMMineHeaderView: UIView {
             make.height.equalTo(kYMMineHeaderImageHeight)
         }
         
+        blurView.snp_makeConstraints { (make) in
+            make.left.right.top.bottom.equalTo(bgImageView)
+        }
+        
         headPhotoButton.snp_makeConstraints { (make) in
             make.centerX.equalTo(0)
-            make.size.equalTo(CGSizeMake(70, 70))
+            make.size.equalTo(CGSizeMake(80, 80))
             make.top.equalTo(bgImageView.snp_top).offset(64)
         }
         
@@ -65,6 +71,12 @@ class YMMineHeaderView: UIView {
         bgImageView.contentMode = .ScaleAspectFill
         bgImageView.image = UIImage(named: "hrscy")
         return bgImageView
+    }()
+    
+    lazy var blurView: UIVisualEffectView = {
+        let blurEffect = UIBlurEffect(style: .Light)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        return blurView
     }()
     
     /// 懒加载，创建头像按钮
