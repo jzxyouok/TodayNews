@@ -347,8 +347,8 @@
 			children = (
 				947564F21D4C269D00AC6B72 /* YMVerticalButton.swift */,
 				947564FA1D4C299C00AC6B72 /* YMMineHeaderView.swift */,
-				940FC7651D4E496400F53ADE /* YMMineNoLoginHeaderView.xib */,
 				940FC7631D4E48A900F53ADE /* YMMineNoLoginHeaderView.swift */,
+				940FC7651D4E496400F53ADE /* YMMineNoLoginHeaderView.xib */,
 				947564FC1D4C2AA500AC6B72 /* YMMineHeaderBottomView.swift */,
 				947564FE1D4C2BD600AC6B72 /* YMMineHeaderIconButton.swift */,
 				947565001D4C2EE800AC6B72 /* YMMineCell.swift */,

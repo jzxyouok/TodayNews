@@ -47,14 +47,27 @@ class YMMineViewController: UITableViewController {
         view.backgroundColor = YMGlobalColor()
         let nib = UINib(nibName: String(YMMineCell), bundle: nil)
         tableView.registerNib(nib, forCellReuseIdentifier: mineCellID)
-        tableView.tableHeaderView = headerView
         let footerView = UIView()
         footerView.height = kMargin
         tableView.tableFooterView = footerView
         tableView.rowHeight = kMineCellH
         tableView.separatorStyle = .None
-        
+        if NSUserDefaults.standardUserDefaults().boolForKey(isLogin) {
+            tableView.tableHeaderView = headerView
+        } else {
+            tableView.tableHeaderView = noLoginHeaderView
+        }
     }
+    
+    /// 懒加载，创建 未登录 headerView
+    private lazy var noLoginHeaderView: YMMineNoLoginHeaderView = {
+        let noLoginHeaderView = YMMineNoLoginHeaderView.noLoginHeaderView()
+//        noLoginHeaderView.width = SCREENW
+//        noLoginHeaderView.y = -20
+//        noLoginHeaderView.height = 180
+        noLoginHeaderView.frame = CGRectMake(0, 20, SCREENW, 278)
+        return noLoginHeaderView
+    }()
     
     /// 懒加载，创建 headerView
     private lazy var headerView: YMMineHeaderView = {

@@ -14,4 +14,8 @@ class YMMineNoLoginHeaderView: UIView {
         super.awakeFromNib()
         
     }
+    
+    class func noLoginHeaderView() -> YMMineNoLoginHeaderView {
+        return NSBundle.mainBundle().loadNibNamed(String(self), owner: nil, options: nil).last as! YMMineNoLoginHeaderView
+    }
 }
