@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		827E87E6C347D72EEA480634 /* Pods_TodayNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4486ED8A9D71B92D386525D6 /* Pods_TodayNews.framework */; };
+		940FC7641D4E48A900F53ADE /* YMMineNoLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940FC7631D4E48A900F53ADE /* YMMineNoLoginHeaderView.swift */; };
+		940FC7661D4E496400F53ADE /* YMMineNoLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 940FC7651D4E496400F53ADE /* YMMineNoLoginHeaderView.xib */; };
 		947564771D4B86FE00AC6B72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947564761D4B86FE00AC6B72 /* Assets.xcassets */; };
 		9475647A1D4B86FE00AC6B72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947564781D4B86FE00AC6B72 /* LaunchScreen.storyboard */; };
 		947564851D4B86FE00AC6B72 /* TodayNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947564841D4B86FE00AC6B72 /* TodayNewsTests.swift */; };
@@ -36,6 +38,18 @@
 		9475650F1D4CAC8E00AC6B72 /* YMSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9475650E1D4CAC8E00AC6B72 /* YMSettingModel.swift */; };
 		947565121D4CAD8400AC6B72 /* YMSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947565101D4CAD8400AC6B72 /* YMSettingCell.swift */; };
 		947565131D4CAD8400AC6B72 /* YMSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 947565111D4CAD8400AC6B72 /* YMSettingCell.xib */; };
+		947565151D4CB85D00AC6B72 /* YMAccountManageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947565141D4CB85D00AC6B72 /* YMAccountManageController.swift */; };
+		947565181D4CBCAA00AC6B72 /* YMAccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947565161D4CBCAA00AC6B72 /* YMAccountCell.swift */; };
+		947565191D4CBCAA00AC6B72 /* YMAccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 947565171D4CBCAA00AC6B72 /* YMAccountCell.xib */; };
+		9475651B1D4CC2A900AC6B72 /* YMAutoPlayVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9475651A1D4CC2A900AC6B72 /* YMAutoPlayVideoController.swift */; };
+		9475651E1D4CC3B700AC6B72 /* YMHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9475651C1D4CC3B700AC6B72 /* YMHelpViewController.swift */; };
+		9475651F1D4CC3B700AC6B72 /* YMHelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9475651D1D4CC3B700AC6B72 /* YMHelpViewController.xib */; };
+		947565251D4CF3E900AC6B72 /* YMNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947565241D4CF3E900AC6B72 /* YMNetworkTool.swift */; };
+		947565281D4CF90600AC6B72 /* YMNewCareTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947565261D4CF90600AC6B72 /* YMNewCareTopCell.swift */; };
+		947565291D4CF90600AC6B72 /* YMNewCareTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 947565271D4CF90600AC6B72 /* YMNewCareTopCell.xib */; };
+		9475652C1D4CFAD600AC6B72 /* YMNewCareBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9475652A1D4CFAD600AC6B72 /* YMNewCareBottomCell.swift */; };
+		9475652D1D4CFAD600AC6B72 /* YMNewCareBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9475652B1D4CFAD600AC6B72 /* YMNewCareBottomCell.xib */; };
+		9475652F1D4D7EC500AC6B72 /* YMCareheaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9475652E1D4D7EC500AC6B72 /* YMCareheaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +72,8 @@
 /* Begin PBXFileReference section */
 		14DB40818E01E6EB10374E82 /* Pods-TodayNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodayNews/Pods-TodayNews.release.xcconfig"; sourceTree = "<group>"; };
 		4486ED8A9D71B92D386525D6 /* Pods_TodayNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodayNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		940FC7631D4E48A900F53ADE /* YMMineNoLoginHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMMineNoLoginHeaderView.swift; sourceTree = "<group>"; };
+		940FC7651D4E496400F53ADE /* YMMineNoLoginHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMMineNoLoginHeaderView.xib; sourceTree = "<group>"; };
 		9475646C1D4B86FE00AC6B72 /* TodayNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		947564761D4B86FE00AC6B72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		947564791D4B86FE00AC6B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -92,6 +108,18 @@
 		9475650E1D4CAC8E00AC6B72 /* YMSettingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMSettingModel.swift; sourceTree = "<group>"; };
 		947565101D4CAD8400AC6B72 /* YMSettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMSettingCell.swift; sourceTree = "<group>"; };
 		947565111D4CAD8400AC6B72 /* YMSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMSettingCell.xib; sourceTree = "<group>"; };
+		947565141D4CB85D00AC6B72 /* YMAccountManageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMAccountManageController.swift; sourceTree = "<group>"; };
+		947565161D4CBCAA00AC6B72 /* YMAccountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMAccountCell.swift; sourceTree = "<group>"; };
+		947565171D4CBCAA00AC6B72 /* YMAccountCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMAccountCell.xib; sourceTree = "<group>"; };
+		9475651A1D4CC2A900AC6B72 /* YMAutoPlayVideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMAutoPlayVideoController.swift; sourceTree = "<group>"; };
+		9475651C1D4CC3B700AC6B72 /* YMHelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMHelpViewController.swift; sourceTree = "<group>"; };
+		9475651D1D4CC3B700AC6B72 /* YMHelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMHelpViewController.xib; sourceTree = "<group>"; };
+		947565241D4CF3E900AC6B72 /* YMNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMNetworkTool.swift; sourceTree = "<group>"; };
+		947565261D4CF90600AC6B72 /* YMNewCareTopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMNewCareTopCell.swift; sourceTree = "<group>"; };
+		947565271D4CF90600AC6B72 /* YMNewCareTopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMNewCareTopCell.xib; sourceTree = "<group>"; };
+		9475652A1D4CFAD600AC6B72 /* YMNewCareBottomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMNewCareBottomCell.swift; sourceTree = "<group>"; };
+		9475652B1D4CFAD600AC6B72 /* YMNewCareBottomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMNewCareBottomCell.xib; sourceTree = "<group>"; };
+		9475652E1D4D7EC500AC6B72 /* YMCareheaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMCareheaderView.swift; sourceTree = "<group>"; };
 		FC9B11AC2D7AFCE523D16496 /* Pods-TodayNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodayNews/Pods-TodayNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -276,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				947564F61D4C274100AC6B72 /* YMConst.swift */,
+				947565241D4CF3E900AC6B72 /* YMNetworkTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -296,6 +325,10 @@
 				947564DD1D4BADD500AC6B72 /* YMMineViewController.swift */,
 				947565081D4C568100AC6B72 /* YMCollectionViewController.swift */,
 				9475650A1D4C584C00AC6B72 /* YMSettingViewController.swift */,
+				947565141D4CB85D00AC6B72 /* YMAccountManageController.swift */,
+				9475651A1D4CC2A900AC6B72 /* YMAutoPlayVideoController.swift */,
+				9475651C1D4CC3B700AC6B72 /* YMHelpViewController.swift */,
+				9475651D1D4CC3B700AC6B72 /* YMHelpViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -314,12 +347,16 @@
 			children = (
 				947564F21D4C269D00AC6B72 /* YMVerticalButton.swift */,
 				947564FA1D4C299C00AC6B72 /* YMMineHeaderView.swift */,
+				940FC7651D4E496400F53ADE /* YMMineNoLoginHeaderView.xib */,
+				940FC7631D4E48A900F53ADE /* YMMineNoLoginHeaderView.swift */,
 				947564FC1D4C2AA500AC6B72 /* YMMineHeaderBottomView.swift */,
 				947564FE1D4C2BD600AC6B72 /* YMMineHeaderIconButton.swift */,
 				947565001D4C2EE800AC6B72 /* YMMineCell.swift */,
 				947565011D4C2EE800AC6B72 /* YMMineCell.xib */,
 				947565101D4CAD8400AC6B72 /* YMSettingCell.swift */,
 				947565111D4CAD8400AC6B72 /* YMSettingCell.xib */,
+				947565161D4CBCAA00AC6B72 /* YMAccountCell.swift */,
+				947565171D4CBCAA00AC6B72 /* YMAccountCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -352,6 +389,11 @@
 		947564E41D4BADD500AC6B72 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				947565261D4CF90600AC6B72 /* YMNewCareTopCell.swift */,
+				947565271D4CF90600AC6B72 /* YMNewCareTopCell.xib */,
+				9475652A1D4CFAD600AC6B72 /* YMNewCareBottomCell.swift */,
+				9475652B1D4CFAD600AC6B72 /* YMNewCareBottomCell.xib */,
+				9475652E1D4D7EC500AC6B72 /* YMCareheaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -496,12 +538,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947565291D4CF90600AC6B72 /* YMNewCareTopCell.xib in Resources */,
 				947565031D4C2EE800AC6B72 /* YMMineCell.xib in Resources */,
 				9475647A1D4B86FE00AC6B72 /* LaunchScreen.storyboard in Resources */,
 				947565131D4CAD8400AC6B72 /* YMSettingCell.xib in Resources */,
+				9475652D1D4CFAD600AC6B72 /* YMNewCareBottomCell.xib in Resources */,
 				947565051D4C3AA600AC6B72 /* YMMineCellPlist.plist in Resources */,
 				9475650D1D4C5AA500AC6B72 /* YMSettingPlist.plist in Resources */,
 				947564771D4B86FE00AC6B72 /* Assets.xcassets in Resources */,
+				947565191D4CBCAA00AC6B72 /* YMAccountCell.xib in Resources */,
+				9475651F1D4CC3B700AC6B72 /* YMHelpViewController.xib in Resources */,
+				940FC7661D4E496400F53ADE /* YMMineNoLoginHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +624,8 @@
 				947565071D4C3BD100AC6B72 /* YMMineCellModel.swift in Sources */,
 				947564FB1D4C299C00AC6B72 /* YMMineHeaderView.swift in Sources */,
 				947565121D4CAD8400AC6B72 /* YMSettingCell.swift in Sources */,
+				9475651E1D4CC3B700AC6B72 /* YMHelpViewController.swift in Sources */,
+				9475652C1D4CFAD600AC6B72 /* YMNewCareBottomCell.swift in Sources */,
 				947564F91D4C274C00AC6B72 /* UIView+Extension.swift in Sources */,
 				947564F01D4BADD500AC6B72 /* YMNewCareViewController.swift in Sources */,
 				947564EA1D4BADD500AC6B72 /* YMHomeViewController.swift in Sources */,
@@ -584,16 +633,23 @@
 				947564FD1D4C2AA500AC6B72 /* YMMineHeaderBottomView.swift in Sources */,
 				9475650F1D4CAC8E00AC6B72 /* YMSettingModel.swift in Sources */,
 				947564ED1D4BADD500AC6B72 /* YMTabBarController.swift in Sources */,
+				947565281D4CF90600AC6B72 /* YMNewCareTopCell.swift in Sources */,
 				947565021D4C2EE800AC6B72 /* YMMineCell.swift in Sources */,
+				947565151D4CB85D00AC6B72 /* YMAccountManageController.swift in Sources */,
 				9475650B1D4C584C00AC6B72 /* YMSettingViewController.swift in Sources */,
 				947565091D4C568100AC6B72 /* YMCollectionViewController.swift in Sources */,
+				9475651B1D4CC2A900AC6B72 /* YMAutoPlayVideoController.swift in Sources */,
 				947564EC1D4BADD500AC6B72 /* YMNavigationController.swift in Sources */,
 				947564EF1D4BADD500AC6B72 /* YMMineViewController.swift in Sources */,
 				947564EE1D4BADD500AC6B72 /* AppDelegate.swift in Sources */,
 				947564F71D4C274100AC6B72 /* YMConst.swift in Sources */,
 				947564EB1D4BADD500AC6B72 /* YMBaseViewController.swift in Sources */,
 				947564FF1D4C2BD600AC6B72 /* YMMineHeaderIconButton.swift in Sources */,
+				947565251D4CF3E900AC6B72 /* YMNetworkTool.swift in Sources */,
 				947564F31D4C269D00AC6B72 /* YMVerticalButton.swift in Sources */,
+				940FC7641D4E48A900F53ADE /* YMMineNoLoginHeaderView.swift in Sources */,
+				9475652F1D4D7EC500AC6B72 /* YMCareheaderView.swift in Sources */,
+				947565181D4CBCAA00AC6B72 /* YMAccountCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
