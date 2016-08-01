@@ -28,7 +28,7 @@ class YMMineHeaderView: UIView {
         super.init(frame: frame)
         // 设置 UI
         setupUI()
-        
+    
     }
     
     /// 设置 UI
@@ -39,7 +39,7 @@ class YMMineHeaderView: UIView {
         bgImageView.addSubview(blurView)
         // 添加头像按钮
         addSubview(headPhotoButton)
-        // 添加背景图片
+        // 添加底部 view
         addSubview(bottomView)
         
         // 设置约束

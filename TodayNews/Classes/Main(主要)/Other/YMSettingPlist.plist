@@ -5,26 +5,6 @@
 	<array>
 		<dict>
 			<key>title</key>
-			<string>账号管理</string>
-			<key>subtitle</key>
-			<string></string>
-			<key>rightTitle</key>
-			<string></string>
-			<key>isHiddenRightTitle</key>
-			<true/>
-			<key>isHiddenLine</key>
-			<true/>
-			<key>isHiddenSubtitle</key>
-			<true/>
-			<key>isHiddenArraw</key>
-			<false/>
-			<key>isHiddenSwitch</key>
-			<true/>
-		</dict>
-	</array>
-	<array>
-		<dict>
-			<key>title</key>
 			<string>列表显示摘要</string>
 			<key>subtitle</key>
 			<string></string>

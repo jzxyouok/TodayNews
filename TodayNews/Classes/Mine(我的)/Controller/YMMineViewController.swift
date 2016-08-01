@@ -62,10 +62,8 @@ class YMMineViewController: UITableViewController {
     /// 懒加载，创建 未登录 headerView
     private lazy var noLoginHeaderView: YMMineNoLoginHeaderView = {
         let noLoginHeaderView = YMMineNoLoginHeaderView.noLoginHeaderView()
-//        noLoginHeaderView.width = SCREENW
-//        noLoginHeaderView.y = -20
-//        noLoginHeaderView.height = 180
-        noLoginHeaderView.frame = CGRectMake(0, 20, SCREENW, 278)
+        noLoginHeaderView.bottomView.delegate = self
+        noLoginHeaderView.delegate = self
         return noLoginHeaderView
     }()
     
@@ -83,10 +81,27 @@ class YMMineViewController: UITableViewController {
     }
 }
 
-extension YMMineViewController: YMMineHeaderViewDelegae, YMMineHeaderBottomViewDelegate {
+extension YMMineViewController: YMMineHeaderViewDelegae, YMMineHeaderBottomViewDelegate, YMMineNoLoginHeaderViewDelegate {
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
+    // MARK: - YMMineNoLoginHeaderViewDelegate
+    func noLoginHeaderView(headerView: YMMineNoLoginHeaderView, mobileLoginButtonClick: UIButton) {
+        print(#function)
+    }
+    
+    func noLoginHeaderView(headerView: YMMineNoLoginHeaderView, wechatLoginButtonClick: UIButton) {
+        print(#function)
+    }
+    
+    func noLoginHeaderView(headerView: YMMineNoLoginHeaderView, qqLoginButtonClick: UIButton) {
+        print(#function)
+    }
+    
+    func noLoginHeaderView(headerView: YMMineNoLoginHeaderView, weiboLoginButtonClick: UIButton) {
+        print(#function)
+    }
+    
+    func noLoginHeaderView(headerView: YMMineNoLoginHeaderView, moreLoginButtonClick: UIButton) {
+        print(#function)
     }
     
     // MARK: - YMMineHeaderViewDelegae
@@ -141,13 +156,22 @@ extension YMMineViewController: YMMineHeaderViewDelegae, YMMineHeaderBottomViewD
     override func scrollViewDidScroll(scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y
         if offsetY < 0 {
-            var tempFrame = headerView.bgImageView.frame
-            tempFrame.origin.y = offsetY
-            tempFrame.size.height = kYMMineHeaderImageHeight - offsetY
-            headerView.bgImageView.frame = tempFrame
-            headerView.blurView.frame = tempFrame
-            headerView.blurView.layoutIfNeeded()
+            if NSUserDefaults.standardUserDefaults().boolForKey(isLogin) {
+                var tempFrame = headerView.bgImageView.frame
+                tempFrame.origin.y = offsetY
+                tempFrame.size.height = kYMMineHeaderImageHeight - offsetY
+                headerView.bgImageView.frame = tempFrame
+            } else {
+                var tempFrame = noLoginHeaderView.bgImageView.frame
+                tempFrame.origin.y = offsetY
+                tempFrame.size.height = kYMMineHeaderImageHeight - offsetY
+                noLoginHeaderView.bgImageView.frame = tempFrame
+            }
         }
         
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
     }
 }

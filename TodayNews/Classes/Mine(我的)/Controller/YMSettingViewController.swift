@@ -10,8 +10,10 @@ import UIKit
 
 let settingCellID = "settingCellID"
 
-class YMSettingViewController: UITableViewController {
+class YMSettingViewController: YMBaseViewController {
 
+    var tableView: UITableView?
+    
     var settings = [AnyObject]()
     
     override func viewDidLoad() {
@@ -24,12 +26,18 @@ class YMSettingViewController: UITableViewController {
     
     private func setupUI() {
         view.backgroundColor = YMGlobalColor()
+        let tableView = UITableView(frame: view.bounds, style: .Grouped)
         let nib = UINib(nibName: String(YMSettingCell), bundle: nil)
         tableView.registerNib(nib, forCellReuseIdentifier: settingCellID)
-        let footerView = UIView()
-        tableView.tableFooterView = footerView
-        tableView.rowHeight = 55
+        tableView.tableHeaderView = headerView
+        tableView.tableFooterView = UIView()
+        tableView.rowHeight = 65
         tableView.separatorStyle = .None
+        tableView.sectionFooterHeight = 0.1 // 默认是0
+        tableView.delegate = self
+        tableView.dataSource = self
+        view.addSubview(tableView)
+        self.tableView = tableView
     }
 
     // 从 plist 加载数据
@@ -107,21 +115,34 @@ class YMSettingViewController: UITableViewController {
         alertController.addAction(okAction)
         presentViewController(alertController, animated: true, completion: nil)
     }
+    
+    /// 头部 view
+    private lazy var headerView: YMSettingHeaderView = {
+        let headerView = YMSettingHeaderView.settingHeaderView()
+        headerView.delegate = self
+        return headerView
+    }()
 
 }
 
-extension YMSettingViewController {
+extension YMSettingViewController: UITableViewDelegate, UITableViewDataSource, YMSettingHeaderViewDelegate {
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    // MARK: - YMSettingHeaderViewDelegate
+    func settingHeaderView(headerView: YMSettingHeaderView, accountManageButton: UIButton) {
+        
+    }
+    
+    // MARK: - UITableViewDataSource
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return settings.count ?? 0
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let setting = settings[section] as! [YMSettingModel]
         return setting.count ?? 0
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(settingCellID) as! YMSettingCell
         let cellArray = settings[indexPath.section] as! [YMSettingModel]
         cell.setting = cellArray[indexPath.row]
@@ -133,11 +154,11 @@ extension YMSettingViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return kMargin
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         if indexPath.section == 0 {
             let accountManageVC = YMAccountManageController()
